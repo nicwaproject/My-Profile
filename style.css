@@ -41,7 +41,7 @@ body {
 /* Info section */
 .info {
     width: 60%;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .info h2 {
@@ -55,6 +55,10 @@ body {
     font-size: 1rem;
     color: #555;
     text-align: justify;
+}
+
+.description {
+    line-height: 1.2;
 }
 
 /* Social media icons styling */
