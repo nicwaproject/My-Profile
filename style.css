@@ -1,0 +1,79 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f9f9f9;
+}
+
+/* Flexbox layout for about section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    gap: 50px;
+}
+
+/* Profile picture styling */
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect on profile picture */
+.profile-pic:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Info section */
+.info {
+    width: 60%;
+    line-height: 2;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* Social media icons styling */
+.social-icon {
+    font-size: 20px;
+    color: #353237;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover effect on social media icons */
+.social-icon:hover {
+    color: #C3B8BE;
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        flex-direction: column-reverse;
+        padding: 5px;
+    }
+}
